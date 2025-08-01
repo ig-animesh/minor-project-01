@@ -92,11 +92,11 @@ html, body{
 #featured {
     padding: 10vw 20vw;
 }
-#featured h1{
+.fheading h1{
     line-height: 1;
     font-size: 4vw;
 }
-#featured h1:nth-child(2){
+.fheading>h1:nth-child(2){
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
@@ -111,15 +111,29 @@ html, body{
 #fleft{
     width: 45%;
     height: inherit;
-    border: 1px solid blue;
     overflow: auto;
 }
 
 
 .fleftelem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: inherit;
-    background-color: crimson;
+}
+ .fleftelem h1{
+    font-size: 2.4vw;
+    line-height: 1;
+    text-transform: capitalize;
+    margin: 2vw 0;
+}
+.fleftelem h3{
+    font-size: 1.3vw;
+}
+
+.fleftelem h5{
+    opacity: .5;
 }
 
 #fright{
