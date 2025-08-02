@@ -111,7 +111,7 @@ html, body{
 #fleft{
     width: 45%;
     height: inherit;
-    overflow: auto;
+    overflow: hidden;
 }
 
 
@@ -148,4 +148,30 @@ html, body{
     width: 90%;
     height: 90%;
     background-color: crimson;
+}
+
+#btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btndiv button{
+    padding: 1.2vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #6f6f6f;
+    background-color: #fff;
+    font-size: 1vw;
+    letter-spacing: -1px;
+}
+
+
+
+#dev{
+    width: 100%;
+    padding: 5vw 20vw;
+}
+#dev h1{
+    font-size: 4vw;
+    width: 60%;
+    line-height: 1;
 }
