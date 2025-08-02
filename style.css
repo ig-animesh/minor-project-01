@@ -8,6 +8,10 @@ html, body{
     width: 100%;
     height: 100%;
 }
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
 
 #main{
     width: 100%;
@@ -75,6 +79,10 @@ html, body{
     line-height: 1;
 }
 
+.headings h1:hover{
+    color: #000;
+}
+
 #home-last{
     padding: 1.8vw 20vw;
 }
@@ -96,9 +104,13 @@ html, body{
     line-height: 1;
     font-size: 4vw;
 }
+
 .fheading>h1:nth-child(2){
     color: transparent;
     -webkit-text-stroke: 1px #000;
+}
+.fheading>h1:nth-child(2):hover{
+    color: #000;
 }
 
 #featured-images{
@@ -171,7 +183,88 @@ html, body{
     padding: 5vw 20vw;
 }
 #dev h1{
-    font-size: 4vw;
+    font-size: 3.8vw;
     width: 60%;
     line-height: 1;
+}
+
+#dev p{
+    font-size: 1.3vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+#slide{
+    width: 30%;
+}
+
+#slide #img{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+#slide #img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide #tag{
+    width: fit-content;
+    border-radius: 100px;
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+}
+
+#slide h3{
+    font-size: 1.4vw;
+    letter-spacing: -.5px;
+}
+
+#inspir{
+    width: 100%;
+    padding: 4vw 12vw;
+}
+#inspir h1{
+    font-size: 3.5vw;
+    width: 30%;
+}
+
+.slide2{
+    width: 20%;
+}
+.slide2 #img{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.slide2 #img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide2 #tag{
+    width: fit-content;
+    border-radius: 100px;
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+}
+.slide2 h3{
+    font-size: 1.2vw;
+    letter-spacing: -.5px;
 }
